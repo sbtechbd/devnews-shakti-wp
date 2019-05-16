@@ -32,7 +32,7 @@
 					   
                        <h3 class="heading_01" style="font-size:25px;"><a href="<?php the_permalink();  ?>"><?php the_title(); ?></a></h3>
 					   <ol class="breadcrumb">
-        <li><?php echo $themesbazar['update'];?> <?php the_time('F, j, Y, g:i a'); ?></li>
+        <li><?php echo $themesbazar['update'];?>  <?php the_date('F j, Y'); ?> at <?php the_time('g:i a'); ?></li>
         <li class="active"><?php setPostViews(get_the_ID()); ?> <?php echo getPostViews(get_the_ID()); ?> <?php echo $themesbazar['count'];?></li>
         </ol>
                        <p><?php the_content();?> </p> 
